@@ -40,4 +40,18 @@ void inicializarSeriesHardCode(eSerie series[])
         strcpy(series[i].genero, genero[i]);
     }
 }
+void mostrarListaSeries(eSerie series[], int cant)
+{
+    int i;
+    for(i=0; i<cant; i++)
+    {
+        if(series[i].estado==1)
+        {
+            printf("%d %s\n", series[i].idSerie, series[i].nombre);
+        }
+
+    }
+}
+
+
 
