@@ -31,31 +31,9 @@ void inicializarUsuariosHardCode(eUsuario usuarios[])
         strcpy(usuarios[i].nombre, nombre[i]);
 
     }
-}
 
-void mostrarUsuarioConSuSerie(eUsuario usuarios[], int cantU, eSerie series[], int cantS)
-{
-    int i;
-    int j;
 
-    for(i=0; i<cantU; i++)
-    {
-        if(usuarios[i].estado==1)
-        {
-            printf("%3d %10s ", usuarios[i].idUsuario, usuarios[i].nombre);
-            for(j=0; j<cantS; j++)
-            {
 
-                if(series[j].estado == 1 && usuarios[i].idSerie == series[j].idSerie)
-                {
-                    printf("%s", series[j].nombre);
-                    break;
-                }
-            }
-            printf("\n");
-        }
-
-    }
 
 
 
